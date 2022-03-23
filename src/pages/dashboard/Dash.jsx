@@ -1,11 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Post from "../../components/posts/Post";
+import Posts from "../../components/posts/Posts";
+import Addprod from '../addprod/Addprod';
+import "./dash.css";
 
 function Dash({posts}) {
     return (
         <div>
-            <h1>DashBoard</h1>
+            <h1 className='dashtitle'>DashBoard</h1>
+            <button className="addlink"><Link to={'/add'}>Add Product</Link></button>
             <form>
                 <input type="search" placeholder="Search"></input>
                     <select>
@@ -21,7 +24,7 @@ function Dash({posts}) {
                     </select>
                     <button>Search</button>
             <div>
-                        
+                   <Posts/>     
             </div>
                 </form>
         </div>

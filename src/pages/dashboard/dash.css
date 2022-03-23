@@ -1,0 +1,12 @@
+.dashtitle{
+    text-align: center;
+}
+.addlink{
+    margin-left: 90%;
+    background-color: rgb(183, 246, 248);
+    padding: 0.5rem;
+
+}
+.addlink:hover{
+    background-color:rgb(118, 247, 252) ;
+}

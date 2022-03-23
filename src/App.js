@@ -5,16 +5,16 @@ import Addprod from "./pages/addprod/Addprod";
 import Dash from "./pages/dashboard/Dash";
 
 function App() {
+  const user = true;
   return (
 <>
 <Router>
   < Navbar />
   <Routes>
-    <Route path="/" element={< Login />} />
+    <Route exact path="/" element={< Login />} />
+    <Route path = "/dash" element = {user ? <Dash /> : <Login/>} />
     <Route path ="/add" element ={ < Addprod />} />
-    <Route path = "/dash" element = { <Dash />} />
-    
-  </Routes>
+</Routes>
 </Router>
 
 </>
